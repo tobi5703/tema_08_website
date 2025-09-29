@@ -1,0 +1,58 @@
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 20px;
+
+}
+
+header ul li:first-child {
+    list-style: none;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 20px;
+}
+
+#image-container {
+    grid-column: span 3;
+    border: 2px solid black;
+}
+
+img {
+    width: 100%;
+}
+
+#product-info {
+    grid-column: span 3;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#product-specifics {
+    margin-top: 20px;
+}
+
+#product-specifics p {
+    margin-left: 10px;
+}
+
+#brand-info {
+}
+
+#add-to-basket {
+    grid-column: span 2;
+    border: 2px solid black;
+    background-color: lightgray;
+    color: white;
+    padding: 20% 5%;
+}

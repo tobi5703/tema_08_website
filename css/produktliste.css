@@ -1,0 +1,55 @@
+#products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px 30px;
+}
+
+.product {
+    width: 100%;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+.img {
+    width: 100%;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.product-header {
+    font-weight: bold;
+   
+}
+
+.product-details {
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product-cat-brand {
+    color: gray;
+    font-weight: lighter;
+}
+
+.product-pricing {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    
+}
+
+.product-cost {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-discount {
+    background-color: red;
+    font-weight: bold;
+}

@@ -1,6 +1,65 @@
 <script>
-    console.log('hello world')
+    let time = new Date().getHours();
+    let timeOfDay
+    time = 0
+
+    if (time <= 5) {
+        timeOfDay = 'Godnat'
+    } else if (time <= 10) {
+        timeOfDay = 'Godmorgen'
+    } else if (time <= 18) {
+        timeOfDay = 'Goddag'
+    } else if (time <= 24) {
+        timeOfDay = 'Godaften'
+    } else {
+        timeOfDay = 'Time.exe is not working'
+    }
+
+    console.log(timeOfDay)
 </script>
 
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt consectetur nisi accusamus vero obcaecati architecto quam voluptates ipsam sit alias.</p>
+<head>
+    <link rel="stylesheet" href="./css/universal.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
 
+
+<div id="container">
+        
+    <header>
+        <h1>Fashion<span id="header-highlight">R</span>Us</h1>
+        <h3>Categories Brands Seasons</h3>
+    </header>
+
+    <main>
+        <h2>Categories</h2>
+        <section id="categoires">
+
+            <div class="category">
+                <p>Accesories</p>
+            </div>
+
+            <div class="category">
+                <p>Apparel</p>
+            </div>
+
+            <div class="category">
+                <p>Footwear</p>
+            </div>
+
+            <div class="category">
+                <p>Free Items</p>
+            </div>
+
+            <div class="category">
+                <p>Personal Care</p>
+            </div>
+
+            <div class="category">
+                <p>Sporting Goods</p>
+            </div>
+
+        </section>
+    </main>
+
+</div>
