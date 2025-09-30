@@ -40,10 +40,19 @@ img {
 
 #product-specifics {
     margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
 #product-specifics p {
     margin-left: 10px;
+}
+
+#price-and-discount {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
 }
 
 #brand-info {
@@ -55,4 +64,14 @@ img {
     background-color: lightgray;
     color: white;
     padding: 20% 5%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
+
+#choose-size { 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
