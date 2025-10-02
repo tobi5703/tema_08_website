@@ -15,7 +15,7 @@ header ul li:first-child {
     list-style: none;
 }
 
-main {
+#main-container {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     gap: 20px;
@@ -28,6 +28,8 @@ main {
 
 img {
     width: 100%;
+    height: 100%;
+    display: block;
 }
 
 #product-info {
