@@ -1,11 +1,16 @@
 const container = document.querySelector("#products")
 
+const queryString = new URLSearchParams(window.location.search);
+const category = queryString.get("category")
+
+
 async function getData() {
-    const response = await fetch(`https://kea-alt-del.dk/t7/api/products`)
+    const response = await fetch(`https://kea-alt-del.dk/t7/api/products?category=${category}`)
         .then((res) => res.json())
         .then(showProducts)
         
     function showProducts(data) {
+
         //console.log(data);
         let markup = ""
         data.forEach(product => {
