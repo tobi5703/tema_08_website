@@ -1,14 +1,13 @@
-let container = document.querySelector('main')
+const container = document.querySelector('main')
+
+const queryString = new URLSearchParams(window.location.search);
+const id = queryString.get("id")
+
 
 
 async function getData() {
-    const response = await fetch("https://kea-alt-del.dk/t7/api/products/1528")
+    const response = await fetch(`https://kea-alt-del.dk/t7/api/products/${id}`)
         .then((res) => res.json());
-        
-
-    console.log(response)
-    
-    //create the image container part
     
     const mainContainer = document.createElement("div")
     mainContainer.id = "main-container"
@@ -16,6 +15,7 @@ async function getData() {
     mainContainer.appendChild(buildImage(response.id))
     mainContainer.appendChild(buildInfo(response.productdisplayname, response.basecolour, response.id, response.price, response.discount, response.brandname, response.brandbio))
     mainContainer.appendChild(buildBasket(response.productdisplayname, response.brandname ,response.articletype))
+
 
     container.appendChild(mainContainer)
 
